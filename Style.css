@@ -1,1 +1,48 @@
 /*commentaire*/
+body
+{
+    width: 50%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bandeau
+{
+    background-color: rgb(002,044,190);
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#bandeau h1
+{
+    background-color: rgb(059,141,189);
+    color: rgb(002,044,190)
+}
+
+#photocv
+{
+    text-align: center;
+}
+#photocv img
+{
+    border: 3px groove;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px black;
+}
+
+a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:visited
+{
+    color: white;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
