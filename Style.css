@@ -10,7 +10,7 @@ main
     flex-direction: column;
 }
 
-#photocv img                /*ordre d'affichage*/
+#photocv img                                 /*ordre d'affichage*/
 {
     order:1;
 }
@@ -39,8 +39,82 @@ footer
     order:7;
 }
 
-.bandeau                    /*Options Bandeau*/
+#photocv                                       /*Photo cv options*/
+{
+    text-align: center;
+    padding: 30px;
+}
+#photocv img
+{
+    border: 1px 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px black;
+}
+
+.bandeau                                        /*bandeau*/
 {
     background-color: rgb(002,044,190);
-    color: blanchedalmond;
+    color: white;
+}
+.bandeau p                                      /*texte bandeau*/
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bandeau h1                                     /*titre bandeau*/
+{
+    background-color: #0288D1;
+    text-align: center;
+}
+
+#logos                                          /*logo loisirs options*/
+{
+    text-align: center;
+    padding: 25px;
+}
+.logoloisirs
+{
+    width: 40px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+a                                               /*liens bandeau*/
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+header
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+}
+header p
+{
+    font-weight: bold;
+}
+.book
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+h1 em
+{
+    font-family: 'Lato', sans-serif;
+    color: rgb(002,044,190);
+    font-style: normal;
+    font-weight: bold;
+}
+p em
+{
+    font-style: normal;
+    text-decoration: underline rgb(002,044,190);
 }
