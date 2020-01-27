@@ -32,10 +32,6 @@ p em
     text-decoration: underline rgb(002,044,190);
 }
 
-article
-{
-
-}
 
 ul                                          /*liste à puces options*/
 {
@@ -55,9 +51,14 @@ li
 }
 .litexte
 {
-    width: 80%
+    width: 70%;
 }
-
+#ulinfo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
 
