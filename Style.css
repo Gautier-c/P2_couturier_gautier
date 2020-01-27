@@ -1,4 +1,4 @@
-main
+body
 {
     width: 50%;
     margin: auto;
@@ -6,37 +6,77 @@ main
     font-family: 'Lato', sans-serif;
     font-size: 0.75em;
     text-align: justify;
+    flex-direction: column;
+}
+
+header                                          /*header options*/
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+}
+header p
+{
+    font-weight: bold;
+}
+
+h1 em
+{
+    font-family: 'Lato', sans-serif;
+    color: rgb(002,044,190);
+    font-style: normal;
+    font-weight: bold;
+}
+p em
+{
+    font-style: normal;
+    text-decoration: underline rgb(002,044,190);
+}
+
+article
+{
+
+}
+
+ul                                          /*liste à puces options*/
+{
+    display: flex;
+    padding-left: 0px;
+}
+li
+{
     display: flex;
     flex-direction: column;
 }
 
-#photocv img                                 /*ordre d'affichage*/
+.lidate
 {
-    order:1;
+    width: 20%;
+    padding-right: 20px;
 }
-#contact
+.litexte
 {
-    order:2;
+    width: 80%
 }
-#formation
+
+
+
+
+
+#bandeau                                        /*bandeau*/
 {
-    order:3;
+    background-color: rgb(002,044,190);
+    color: white;
 }
-#experience
+#bandeau p                                      /*texte bandeau*/
 {
-    order:4;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-#apropos
+
+#bandeau h3                                     /*titre bandeau*/
 {
-    order:5;
-}
-#loisirs
-{
-    order:6;
-}
-footer
-{
-    order:7;
+    background-color: #0288D1;
+    text-align: center;
 }
 
 #photocv                                       /*Photo cv options*/
@@ -49,23 +89,6 @@ footer
     border: 1px 1px solid black;
     border-radius: 50%;
     box-shadow: 0px 3px 3px black;
-}
-
-.bandeau                                        /*bandeau*/
-{
-    background-color: rgb(002,044,190);
-    color: white;
-}
-.bandeau p                                      /*texte bandeau*/
-{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.bandeau h1                                     /*titre bandeau*/
-{
-    background-color: #0288D1;
-    text-align: center;
 }
 
 #logos                                          /*logo loisirs options*/
@@ -90,31 +113,3 @@ a:hover
     text-decoration: underline;
 }
 
-header
-{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-}
-header p
-{
-    font-weight: bold;
-}
-.book
-{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-h1 em
-{
-    font-family: 'Lato', sans-serif;
-    color: rgb(002,044,190);
-    font-style: normal;
-    font-weight: bold;
-}
-p em
-{
-    font-style: normal;
-    text-decoration: underline rgb(002,044,190);
-}
