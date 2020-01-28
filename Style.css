@@ -32,18 +32,34 @@ p em
     text-decoration: underline rgb(002,044,190);
 }
 
+h2                                                  /*Options titres sections*/
+{
+    border-bottom: 2px solid rgb(002,044,190);
+}
+#logo
+{
+    padding-right: 20px;
+    color: rgb(002,044,190);
+}
+
 
 ul                                          /*liste à puces options*/
 {
     display: flex;
+    justify-content: space-between;
     padding-left: 0px;
+    position: relative;
 }
 li
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
 }
-
+#fleche
+{
+    padding-right: 10px;
+    color: rgb(002,044,190)
+}
 .lidate
 {
     width: 20%;
@@ -52,6 +68,7 @@ li
 .litexte
 {
     width: 70%;
+    
 }
 #ulinfo
 {
@@ -59,7 +76,6 @@ li
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 
 
@@ -92,18 +108,6 @@ li
     box-shadow: 0px 3px 3px black;
 }
 
-#logos                                          /*logo loisirs options*/
-{
-    text-align: center;
-    padding: 25px;
-}
-.logoloisirs
-{
-    width: 40px;
-    height: 40px;
-    padding-left: 20px;
-}
-
 a                                               /*liens bandeau*/
 {
     text-decoration: none;
@@ -113,4 +117,3 @@ a:hover
 {
     text-decoration: underline;
 }
-
