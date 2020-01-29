@@ -1,6 +1,7 @@
 body
 {
-    width: 50%;
+    background-color: rgb(110,131,203);
+    width: 65%;
     margin: auto;
     font-size: 17px;
     text-align: justify;
@@ -13,15 +14,15 @@ header
 }
 header h1                                          /*header options*/
 {
-    font-size: 1.5em;
+    font-size: 3em;
     font-family: 'Lato', sans-serif;
-    color: rgb(002,044,190);
+    color: rgb(001,053,103);
 }
 header p
 {
     font-weight: bold;
+    font-size: 1.5em;
 }
-
 h1 em
 {
     color: black;
@@ -32,17 +33,17 @@ h1 em
 p em
 {
     font-style: normal;
-    text-decoration: underline rgb(002,044,190);
+    text-decoration: underline rgb(001,053,103);
 }
 
 h2                                                  /*Options titres sections*/
 {
-    border-bottom: 2px solid rgb(002,044,190);
+    border-bottom: 2px solid rgb(001,053,103);
 }
 header i
 {
     padding-right: 20px;
-    color: rgb(002,044,190);
+    color: rgb(001,053,103);
 }
 
 
@@ -56,12 +57,11 @@ ul                                          /* MAIN liste à puces options*/
 li
 {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
-#fleche
+.fleche
 {
-    padding-right: 10px;
-    color: rgb(002,044,190)
+    color: rgb(001,053,103);
 }
 .lidate
 {
@@ -90,6 +90,10 @@ footer article                              /*Options RECOMMANDATIONS*/
     flex-direction: column;
     padding-bottom: 30px;
 }
+.personne
+{
+    padding-top: 25px;
+}
 .personne p
 {
     margin: 3px;
@@ -108,8 +112,11 @@ footer article                              /*Options RECOMMANDATIONS*/
 
 #bandeau                                        /*bandeau*/
 {
-    background-color: rgb(002,044,190);
+    background-color: rgb(001,053,103);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #contact
 {
@@ -163,10 +170,36 @@ a:hover
 #loisirs p                                    /*Logo loisirs Options*/
 {
     text-align: center;
-    font-size: 4em;
+    font-size: 2.8em;
     padding-bottom: 20px;
 }
 #loisirs i
 {
-    padding-right: 20px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+@media all and (min-width: 1024px)
+{
+    body
+    {
+        font-size: 0.80em;
+        display: flex;
+    }
+    #page
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #bandeau
+    {
+        width: 30%;
+        margin-right: 50px;
+    }
+    #recommandations
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+   
 }
