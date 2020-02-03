@@ -42,8 +42,9 @@ h2                                                  /*Options titres sections*/
 }
 header i
 {
-    padding-right: 30px;
+    padding-right: 40px;
     color: rgb(001,053,103);
+    font-size: 1.5em;
 }
 
 
@@ -138,8 +139,8 @@ aside h3                                      /*titre aside*/
 }
 #photocv img
 {
-    width: 120px;
-    height: 120px;
+    width: 300px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -170,14 +171,10 @@ a:hover
 
 #loisirs p                                    /*Logo loisirs Options*/
 {
-    text-align: center;
-    font-size: 2.8em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 4em;
     padding-bottom: 20px;
-}
-#loisirs i
-{
-    padding-right: 7.5px;
-    padding-left: 7.5px;
 }
 
 @media all and (min-width: 1024px)
@@ -187,6 +184,10 @@ a:hover
         display: flex;
         flex-direction: row-reverse;
         width: 90%;
+    }
+    main
+    {
+        margin-top: 100px;
     }
     aside
     {
@@ -203,7 +204,10 @@ a:hover
     }
     #loisirs
     {
-        padding-top: 350px;
+        padding-top: 600px;
     }
-    
+    #loisirs p
+    {
+        font-size: 3em;
+    }   
 }
