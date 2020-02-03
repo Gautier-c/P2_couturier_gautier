@@ -1,9 +1,9 @@
 body
 {
     background-color: rgb(110,131,203);
-    width: 65%;
+    width: 85%;
     margin: auto;
-    font-size: 17px;
+    font-size: 20px;
     text-align: justify;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
@@ -23,14 +23,14 @@ header p
     font-weight: bold;
     font-size: 1.5em;
 }
-h1 em
+h1 span
 {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-style: normal;
 }
-p em
+p span
 {
     font-style: normal;
     text-decoration: underline rgb(001,053,103);
@@ -42,7 +42,7 @@ h2                                                  /*Options titres sections*/
 }
 header i
 {
-    padding-right: 20px;
+    padding-right: 30px;
     color: rgb(001,053,103);
 }
 
@@ -52,44 +52,41 @@ ul                                          /* MAIN liste à puces options*/
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
+    list-style: none;
     position: relative;
 }
-li
-{
-    display: flex;
-    flex-direction: column;
-}
-.fleche
+.chip
 {
     color: rgb(001,053,103);
+    position: relative;
+    padding-top: 19px;
+    padding-right: 10px;
+    margin-right: 10px;
 }
-.lidate
+.xp
 {
-    width: 20%;
-    padding-right: 20px;
-    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;  
 }
-.litexte
+.xp-date
 {
-    width: 70%;
+    font-weight: bold;
 }
-.litexte h4
+ul .xp
 {
-    font-family: 'Lato', sans-serif;
+    width: 25%;
+    margin-right: 10px;
+}
+ul .txt
+{
+    width: 75%;
 }
 
-#ulinfo
+footer                            /*Options RECOMMANDATIONS*/
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-footer article                              /*Options RECOMMANDATIONS*/
-{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
+    margin-bottom: 40px;
 }
 .personne
 {
@@ -111,7 +108,7 @@ footer article                              /*Options RECOMMANDATIONS*/
 
 
 
-#bandeau                                        /*bandeau*/
+aside                                         /*ASIDE*/
 {
     background-color: rgb(001,053,103);
     color: white;
@@ -120,16 +117,15 @@ footer article                              /*Options RECOMMANDATIONS*/
 }
 #contact
 {
-    font-weight: 200;
     padding-bottom: 30px;
-}
-#bandeau p                                      /*texte bandeau*/
+ }
+aside p                                       /*texte aside*/
 {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-#bandeau h3                                     /*titre bandeau*/
+aside h3                                      /*titre aside*/
 {
     background-color: #0288D1;
     text-align: center;
@@ -142,11 +138,16 @@ footer article                              /*Options RECOMMANDATIONS*/
 }
 #photocv img
 {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
     border: 1px 1px solid black;
     border-radius: 50%;
     box-shadow: 0px 3px 3px black;
 }
-a                                               /*liens bandeau*/
+a                                               /*liens aside*/
 {
     text-decoration: none;
     color: white;
@@ -183,17 +184,13 @@ a:hover
 {
     body
     {
-        font-size: 0.80em;
-        display: flex;
-    }
-    #page
-    {
         display: flex;
         flex-direction: row-reverse;
+        width: 90%;
     }
-    #bandeau
+    aside
     {
-        width: 30%;
+        width: 25%;
         margin-right: 50px;
     }
     #recommandations
