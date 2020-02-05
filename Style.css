@@ -260,5 +260,11 @@ a:hover
     border-radius: 50%;
     box-shadow: 0px 3px 3px black;
     }
+    #loisirs p
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     
 }
