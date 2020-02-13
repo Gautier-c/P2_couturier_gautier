@@ -82,13 +82,7 @@ ul .txt
 {
     width: 75%;
 }
-
-footer                            /*Options RECOMMANDATIONS*/
-{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
+                            /*Options RECOMMANDATIONS*/
 .personne
 {
     padding-top: 25px;
