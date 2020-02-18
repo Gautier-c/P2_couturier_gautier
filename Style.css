@@ -3,10 +3,24 @@ body
     background-color: rgb(110,131,203);
     width: 85%;
     margin: auto;
-    font-size: 30px;
+    font-size: 17px;
     text-align: justify;
+    display:flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
+}
+body > header {
+    order:1;
+}
+body > main {
+    order:3;
+}
+body > aside {
+    order:2;
+}
+#responsiveecran
+{
+    display:none;
 }
 header
 {
@@ -133,8 +147,8 @@ aside h3                                      /*titre aside*/
 }
 #photocv img
 {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -185,8 +199,7 @@ a:hover
 {
     body
     {
-        display: flex;
-        flex-direction: row-reverse;
+        height: 100%;
         width: 90%;
         font-size: 20px;
     }
@@ -196,6 +209,7 @@ a:hover
     }
     aside
     {
+        float: left;
         width: 25%;
         margin-right: 50px;
     }
