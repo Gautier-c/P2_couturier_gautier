@@ -18,10 +18,7 @@ body > main {
 body > aside {
     order:2;
 }
-#responsiveecran
-{
-    display:none;
-}
+
 header
 {
     padding-top: 40px;
